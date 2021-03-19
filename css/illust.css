@@ -1,0 +1,161 @@
+main{
+	background-color:#f0f8ff;
+	width: 80%;
+	margin-left: 10%;
+}
+
+body{
+	background-color:#f0f8ff;
+	margin-top:40px;
+}
+
+.art_box img{
+	margin: 10px;
+	width: 300px;
+	height: 300px;
+	border: 5px #ffffff solid;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+main,
+.art_box,
+.svg_box{
+	display: flex;
+	justify-content: center;
+	flex-wrap : wrap;
+}
+
+.svg_box img{
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+h2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 0;
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	background: rgba(255,71,71,0.9);
+	color: #fffacd;
+}
+
+.top_ttl_area h1{
+		color:#2f4f4f;
+}
+
+.top_ttl_area{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height:500px;
+}
+
+.pane2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+}
+
+#gulico{
+	z-index: 90;
+	margin-left: -100px;
+	width:600px;
+	height:600px;
+}
+
+.bord{
+	position: relative;
+}
+
+.bord img{
+	z-index: 10;
+}
+
+.eye{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top:65px;
+	z-index: 200;
+}
+
+.eye span{
+	position:absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: black;
+}
+
+.eye span:nth-child(1){
+	left: 90px;
+  -webkit-animation:6.5s ease-in 1s infinite running expansion1;
+  animation:6.5s ease-in 1s infinite running expansion1;
+}
+
+.eye span:nth-child(2){
+	left: 120px;
+  animation:6s ease-in 1s infinite running expansion2;
+}
+
+@keyframes expansion1{
+  0%{ left: 90px; }
+	20%{ left: 90px; }
+	30%{ left: 85px; }
+	40%{ left: 90px; }
+	80%{ left: 90px; }
+	90%{ left: 95px; }
+	100%{ left: 90px; }
+}
+
+@keyframes expansion2{
+	0%{ left: 120px; }
+	20%{ left: 120px; }
+	30%{ left: 115px; }
+	40%{ left: 120px; }
+	80%{ left: 120px; }
+	90%{ left: 125px; }
+	100%{ left: 120px; }
+}
+
+@media (max-width: 640px) {
+	.circle_box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width:300px;
+		height:300px;
+		border-radius:50%;
+		background-color: rgba(255,71,71,0.9);
+		margin-left:calc(50% - 150px);
+		z-index: 100;
+		position: absolute;
+		font-size: 30px;
+		color: white;
+	}
+}
+@media (min-width: 641px) {
+	.circle_box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		width:300px;
+		height:300px;
+		border-radius:50%;
+		background-color: rgba(255,71,71,0.9);
+		margin-left:150px;
+		z-index: 100;
+		font-size: 30px;
+		color: white;
+	}
+}
