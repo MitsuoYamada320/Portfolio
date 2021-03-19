@@ -17,7 +17,6 @@ $(function (){
 		}});
 	};
 	
-	
 	//‰æ–ÊƒXƒNƒ[ƒ‹—Ê‚ğæ“¾
 	$(window).on('scroll load',function(){
 		for(var i = 0; i <= skllPalam.length ; i++ ){
