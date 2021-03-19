@@ -4,8 +4,9 @@
 		<link rel="icon" type="imge/png" href="./img/title.png">
 		<link rel="apple-touch-icon" href="./img/title.png">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<script src="./js/jquery.inview/jquery.inview.min.js"></script>
 		<link type="text/css" rel="stylesheet" href="./css/common.css">
 		<link type="text/css" rel="stylesheet" href="./css/index.css">
 		<script type="text/javascript" src="./js/common.js"></script>
@@ -22,43 +23,80 @@
 		<i class="fas fa-fish"></i>
 		<div id="side_nav" class="nav_off"></div>
 		<div class="title_area">
-		<img src="./img/img_p000003.png" alt="img_1"></img>
-				<p> Mitsuo Yamada WebSite</p>
+			<img src="./img/leaf.svg" alt="img_1"></img>
+			<p> Mitsuo Portfolio</p>
 		</div>
 		<div class="page_top"><a href="#"></a></div>
-		<div class="show_window">
-			<ul>
-				<li><img src="./img/img_p000010.PNG" alt="img_2"></img></li>
-				<li><img src="./img/img_p000004.PNG" alt="img_2"></img></li>
-				<li><img src="./img/img_p000005.PNG" alt="img_3"></img></li>
-			</ul>
-		</div>
-		<div class="button_area">
-			<button id = "btn_up"></button>
-			<button id = "btn_down"></button>
-		</div>
-		<div class="small_window"></div>
 		<main>
-			<div id="articleId_001" class="article art_before">
-				<h1>Illust</h1>
-				<i class="fas fa-pen-fancy"></i>
-				<p>イラストの作品を紹介しています。</p>
-				<div id="title_button" class="title_button">
-					<a href="./labo.html">READ MORE</a>
+			<div class="cont">
+				<div id="cont_ttl_001" class="cont_ttl">
+					<h1>ABOUT</h1>
+					<span></span>
+				</div>
+				<div class="plof_txt">
+					<div class="icon_circle">
+						<img src="./img/img_p000005.PNG" alt="imege"></img>
+					</div>
+					<p>初めまして、26歳のヤマダです。文系からIT企業に就職しSEとして5年間様々な現場を経験してきました。その中でフロント側のお仕事に興味を持ち、個人でも学習を始め、今後はフロント側の業務を深めていきたいと考えています。</p>
 				</div>
 			</div>
-			<div id="articleId_002" class="article art_before">
-				<h1>article two</h1>
-				<h2>sub articlr sentence</h2>
-				<p>detail for article</p>
-				<p><a href="">lean more ></a> <a href=""> buy ></a></p>
+			<div class="cont">
+				<div id="cont_ttl_002" class="cont_ttl">
+					<h1>SKILL</h1>
+					<span></span>
+				</div>
 			</div>
-			<div id="articleId_003" class="article art_before">
-					<h1>article tree</h1>
-					<h2>sub articlr sentence</h2>
-					<p>detail for article</p>
-					<p><a href="">lean more ></a> <a href=""> buy ></a></p>
+			<div class="cont_skill">
+				<div class="skill_box">
+					<div class="box_big1"><p><i class="fas fa-desktop"></i> 開発言語</p></div>
+					<div class="column_ttl"><p>言語</p></div><div class="column_ttl"><p>経験歴</p></div><div class="column_ttl"><p>できる度</p></div>
+					<div class="rows_item">Java</div><div>3年半</div><div><div id="000" class="palam"><p>0</p><div class="skill_palam" value="70"></div></div></div>
+					<div class="rows_item">C</div><div>1年</div><div><div id="001" class="palam"><p>0</p><div class="skill_palam" value="50"></div></div></div>
+				</div>
+				<div class="skill_box">
+					<div class="box_big1"><p><i class="fas fa-pencil-alt"></i>デザイン</p></div>
+					<div class="rows_item">Html/Css</div><div>3年</div><div><div id="002" class="palam"><p>0</p><div class="skill_palam" value="90"></div></div></div>
+					<div class="rows_item">Javascript</div><div>2年</div><div><div id="003" class="palam"><p>0</p><div class="skill_palam" value="80"></div></div></div>
+					<div class="rows_item">jQuery</div><div>半年(独学)</div><div><div id="004" class="palam"><p>0</p><div class="skill_palam" value="80"></div></div></div>
+				</div>
+				<div class="skill_box">
+					<div class="box_big1"><p><i class="fas fa-database"></i> DB</p></div>
+					<div class="rows_item">Olacle</div><div>4年</div><div><div id="005" class="palam"><p>0</p><div class="skill_palam" value="70"></div></div></div>
+					<div class="rows_item">MySQL</div><div>1年</div><div><div id="006" class="palam"><p>0</p><div class="skill_palam" value="60"></div></div></div>
+				</div>
+				<div class="skill_box">
+					<div class="box_big1"><p><i class="fas fa-tools"></i> その他</p></div>
+					<div class="rows_item">ExcelVBA</div><div>半年(独学)</div><div><div id="007" class="palam"><p>0</p><div class="skill_palam" value="90"></div></div></div>
+				</div>
 			</div>
+			<div class="cont">
+				<div id="cont_ttl_003" class="cont_ttl">
+					<h1>LIKE</h1>
+					<span></span>
+				</div>
+				<p>自粛期間中にイラストを始めました。</p>
+				<div class="show_window">
+					<ul>
+						<li><img src="./img/img_p000010.PNG" alt="img_1"></img></li>
+						<li><img src="./img/img_p000004.PNG" alt="img_2"></img></li>
+						<li><img src="./img/img_p000005.PNG" alt="img_3"></img></li>
+					</ul>
+				</div>
+				<div class="btn_area">
+					<button id = "btn_up"></button>
+					<button id = "btn_down"></button>
+				</div>
+				<div class="small_window"></div>
+				<div class="cont_btn"><a href="./illust.html">READ MORE</a></div>
+			</div>
+			<div class="profile_area">
+				<p>山田光夫（mitsuo yamada）</p>
+			</div>
+			<div class="profile_area">
+				<a href="https://www.instagram.com/mitsuo_illust/"><i class="fab fa-instagram"></i></a>
+				<a href="https://github.com/MitsuoYamada320/Portfolio"><i class="fab fa-github"></i></a>
+			</div>
+			<div class="footer"><p>Copyright (C) 2021 Mitsuo Yamada. All Rights Reserved.</p></div>
 		</main>
 	</body>
 </html>
