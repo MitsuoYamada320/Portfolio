@@ -20,6 +20,7 @@ body{
 
 main,
 .art_box,
+.comment,
 .svg_box{
 	display: flex;
 	justify-content: center;
@@ -32,6 +33,35 @@ main,
 	height: 200px;
 }
 
+.comment_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+	width:300px;
+	height:300px;
+    padding:0.25em 1em;
+}
+.comment_box:before,.comment_box:after{ 
+    content:'';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+.comment_box:before{
+    border-left: solid 1px #5767bf;
+    border-top: solid 1px #5767bf;
+    top:0;
+    left: 0;
+}
+.comment_box:after{
+    border-right: solid 1px #5767bf;
+    border-bottom: solid 1px #5767bf;
+    bottom:0;
+    right: 0;
+}
+
 h2{
 	display: flex;
 	align-items: center;
@@ -39,7 +69,6 @@ h2{
 	margin: 50px 0;
 	width: 300px;
 	height: 50px;
-	text-align: center;
 	background: rgba(255,71,71,0.9);
 	color: #fffacd;
 }
